@@ -5,19 +5,39 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Unity WebGL Player | BuildAndConquer</title>
     <link rel="stylesheet" href="TemplateData/style.css">
-    <link rel="shortcut icon" href="TemplateData/favicon.ico" />
+    <link rel="shortcut icon" href="TemplateData/favicon.ico"/>
+    <link rel="stylesheet" href="main.css"/>
     <script src="TemplateData/UnityProgress.js"></script>
   </head>
-  <body class="template">
-    <p class="header"><span>Unity WebGL Player | </span>BuildAndConquer</p>
-    <div class="template-wrap clear">
-      <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" height="600px" width="960px"></canvas>
-      <br>
-      <div class="logo"></div>
-      <div class="fullscreen"><img src="TemplateData/fullscreen.png" width="38" height="38" alt="Fullscreen" title="Fullscreen" onclick="SetFullscreen(1);" /></div>
-      <div class="title">BuildAndConquer</div>
+  <body>
+    <div class="controls">
+      <h1>Controls:</h1>
+      <h3>Left Click (One-Finger on Mac) Selects your unit</h3>
+      <h3>Shift-Left Click (One-Finger on Mac) to select multiple</h3>
+      <h3>Right Click (Two-Finger on Mac) moves units</h3>
+      <h3>Right Click (Two-Finger on Mac) attacks the target you click</h3>
+      <h3>Arrow Keys Control the Camera</h3>
+      <h3>Command Bases Generate Credits</h3>
+      <h3>Command Bases Create more Drones</h3>
     </div>
-    <p class="footer">&laquo; created with <a href="http://unity3d.com/" title="Go to unity3d.com">Unity</a> &raquo;</p>
+    <div class="cost">
+      <ul>
+        <h1>Unit Cost</h1>
+        <li>Drones: $25</li>
+        <li>Command Base $200</li>
+      </ul>
+    </div>
+    <div class="template">
+      <p class="header"><span>Unity WebGL Player | </span>BuildAndConquer</p>
+      <div class="template-wrap clear">
+        <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" height="600px" width="960px"></canvas>
+        <br>
+        <div class="logo"></div>
+        <div class="fullscreen"><img src="TemplateData/fullscreen.png" width="38" height="38" alt="Fullscreen" title="Fullscreen" onclick="SetFullscreen(1);" /></div>
+        <div class="title">BuildAndConquer</div>
+      </div>
+      <p class="footer">&laquo; created with <a href="http://unity3d.com/" title="Go to unity3d.com">Unity</a> &raquo;</p>
+    </div>
     <script type='text/javascript'>
       var Module = {
         TOTAL_MEMORY: 268435456,

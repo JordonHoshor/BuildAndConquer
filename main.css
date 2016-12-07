@@ -1,0 +1,9 @@
+.controls {
+  float: left;
+  width: 15%;
+}
+
+.cost {
+  float: right;
+  width: 15%;
+}
